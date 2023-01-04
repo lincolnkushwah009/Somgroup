@@ -1,0 +1,332 @@
+/* You can add global styles to this file, and also import other style files */
+$color_1: #ec681d;
+$color_2: #fa7f38;
+$color_3: #FFF7E9;
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+
+h2 span {
+  color: #ec681d;
+  font-weight: bold;
+}
+
+.brand-name {
+  font-family: acquireBold;
+  color: $color_1;
+  font-size: -webkit-xxx-large;
+  font-weight: 500;
+  animation: opacity-in 4s forwards;
+}
+
+// .language-btn {
+//   cursor: pointer;
+//   border: 1px solid $color_1;
+//   background-color: transparent;
+//   height: 50px;
+//   width: 200px;
+//   color: $color_1;
+//   font-size: 1.5em;
+//   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+// }
+
+#about,
+#team,
+#service,
+#portfolio,
+#contact {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+@font-face {
+  font-family: acquireBold;
+  src: url(../assets/brandFont/aquire-font/AquireBold-8Ma60.otf)
+    format("opentype");
+}
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.header h1 {
+  position: relative;
+  top: 27px;
+  left: 10px;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  height: 100px;
+ background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(4, 36, 48, 1));
+}
+
+.fi {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 2.333333em;
+  line-height: 1em;
+}
+
+/* Dropdown Button */
+/* The container <div> - needed to position the dropdown content */
+.language-btn {
+  cursor: pointer;
+  border: 1px solid $color_1;
+  background-color: transparent;
+  height: 50px;
+  width: 170px;
+  color: $color_1;
+  font-size: 1.5em;
+  padding-top: 0px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: $color_2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: $color_3;
+}
+
+.dropdown:hover > .dropdown-title:before {
+  border-top-width: 0;
+  transition:
+    0.2s border-top-width ease-in,
+    0.3s border-top-color;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+//   .dropdown:hover .dropbtn {background-color: $color_3;}
+
+/* This align the icon to the right */
+#icon {
+  align-items: right;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 250px;
+  width: 311px;
+}
+.card-title {
+  font-size: larger;
+  color: $color_2;
+  text-align: center;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fed9c3;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin: 10px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: #0000ff;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.carousel-indicators .active {
+  background-color: $color_2;
+}
+
+.carousel-inner .carousel-item {
+  height: 700px;
+}
+
+.carousel-control-prev-icon {
+  color: $color_2;
+}
+
+.navbarmenu {
+  color: $color_1;
+  &:hover {
+    color: $color_3;
+  }
+  font-size:20px;
+}
+
+.img-fluid {
+  max-width: 10% !important;
+  margin-right: 17% !important;
+}
+
+.navbar-header {
+  background: #f7f7f7;
+  border: none;
+  box-shadow: none;
+  margin: 0 !important;
+}
+
+mat-card-header {
+  background: #12121212;
+  padding: 5px;
+  color: $color_3;
+}
+
+.mat-mdc-card-header {
+  display: block;
+}
+.mat-mdc-card-title {
+  display: block;
+  margin: 55px;
+  text-align: -webkit-center;
+  font-size: 90px;
+  font-family: sans-serif;
+}
+
+mat-card-content {
+  padding: 10px;
+}
+
+mat-card {
+  padding: 0;
+}
+
+/* start about */
+#about .media-heading-wrapper {
+  padding-bottom: 32px;
+}
+// #about .fa-certificate .fa-gear .fa-handshake-o {
+//   border: 1px solid $color_1;
+//   border-radius: 2px;
+//   color: $color_2;
+//   font-size: 24px;
+//   width: 60px;
+//   height: 60px;
+//   line-height: 60px;
+//   text-align: center;
+//   margin-right: 20px;
+//   padding-bottom: 32px;
+// }
+#about .media-heading-wrapper h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-left: 52px;
+}
+/* end about */
+
+/* start contact */
+#contact {
+  background: #ead4c7;
+}
+#contact .form-control {
+  background: transparent;
+  border: 1px solid $color_3;
+  border-radius: 2px;
+  box-shadow: none;
+  color: #fff;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+#contact label {
+  font-weight: 500;
+}
+#contact input {
+  height: 50px;
+}
+#contact input[type="submit"] {
+  background: $color_3;
+  font-weight: bold;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+#contact input[type="submit"]:hover {
+  background: $color_2;
+}
+#contact address {
+  border-bottom: 1px solid $color_3;
+  padding-top: 30px;
+}
+#contact address .address-title {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+#contact address span {
+  display: block;
+  padding-bottom: 30px;
+}
+#contact address .fa {
+  border: 1px solid $color_2;
+  border-radius: 2px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: $color_2;
+}
+/* end contact */
+
+// enquiry form style
+.close-button{
+  float: right;
+  top:-24px;
+  right:-24px;
+}
+
+.close-icon {
+  transition: 1s ease-in-out;
+}
+
+.close-icon:hover {
+  transform: rotate(180deg);
+}
+
+::ng-deep .icon-outside .close-button{
+  float: right;
+  top:-52px;
+  right:-52px;
+}
+
+::ng-deep .icon-outside .mat-dialog-container {
+ overflow: unset
+}
+
+// cursor pointer
+.pointer-link {
+  cursor: pointer;
+}

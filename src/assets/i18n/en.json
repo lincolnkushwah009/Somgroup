@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "products": "Products",
+    "aboutus": "About Us",
+    "contact": "Contact Us",
+    "language": "Language"
+  },
+  "language": {
+    "en": "English",
+    "hindi": "Hindi",
+    "zh": "Chinese",
+    "fr": "French",
+    "det": "Dutch"
+  }
+}

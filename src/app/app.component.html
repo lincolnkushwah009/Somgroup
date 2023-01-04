@@ -1,0 +1,266 @@
+<div id="somgroupapp">
+	<nav class="navbar sticky-top">
+		<div class="container-fluid">
+			<div class="header">
+				<a class="navbar-brand" href="#">
+					<img src="../assets/logo/logo.png" alt="" loading="lazy" />
+					<h1 class="brand-name animated flip">SOM Group</h1>
+				</a>
+			</div>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+					<div class="navbar-nav float-right text-right">
+						<a class="nav-item nav-link navbarmenu" style="font-size:20px;" href="#">{{'navbar.products' |
+							translate
+							}}</a>
+						<a class="nav-item nav-link navbarmenu" style="font-size:20px;" href="#about">{{'navbar.aboutus'
+							|
+							translate }}</a>
+						<a class="nav-item nav-link pointer-link navbarmenu" style="font-size:20px;" href="#contact"
+							(click)="openEnquiryForm()">{{'navbar.contact' | translate }}</a>
+
+					</div>
+				</div>
+				<!-- Language Dropdown -->
+				<div class="dropdown">
+					<button class="language-btn">
+						{{'navbar.language' | translate
+						}}
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a class="dropdown-item" (click)="useLanguage('en')"><i class="fi fi-us "></i>{{'language.en' |
+							translate }} <i class="fa fa-check text-success ms-2"></i></a>
+						<a class="dropdown-item" (click)="useLanguage('hindi')"><i
+								class="fi fi-in "></i>{{'language.hindi'
+							| translate }} </a>
+						<a class="dropdown-item" (click)="useLanguage('zh')"><i class="fi fi-ch "></i>{{'language.zh' |
+							translate }} </a>
+						<a class="dropdown-item" (click)="useLanguage('fr')"><i class="fi fi-fr "></i>{{'language.fr' |
+							translate }} </a>
+						<a class="dropdown-item" (click)="useLanguage('det')"><i class="fi fi-gr "></i>{{'language.det'
+							| translate }} </a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</nav>
+	<div id="productCarousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="3000">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="../assets/products/plastics/BOPP-1.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption">
+					<h1 data-animation="animated bounceInLeft">First slide label</h1>
+					<p>Some representative placeholder content for the first slide.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="../assets/products/plastics/EVA-1.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption">
+					<h5>Second slide label</h5>
+					<p>Some representative placeholder content for the second slide.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="../assets/products/plastics/HDPE-1.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Third slide label</h5>
+					<p>Some representative placeholder content for the third slide.</p>
+				</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+	<br />
+	<!-- start about -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="1s">WE ARE <span>AWESOME</span></h2>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="1s">
+					<div class="card">
+						<div class="card-body">
+							<h3 class="card-title"><i class="fa fa-certificate"
+									style="padding: 10px;"></i><b>QUALITY</b></h3>
+							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus
+								ac eget diam et
+								laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris
+								eget. Lorem ipsum dolor sit ame.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
+					<div class="card">
+						<div class="card-body">
+							<h3 class="card-title"><i class="fa fa-gear" style="padding: 10px;"></i><b>SERVICE</b></h3>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et
+								laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris
+								eget. Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="1s">
+					<div class="card">
+						<div class="card-body">
+							<h3 class="card-title"><i class="fa fa-handshake-o" style="padding: 10px;"></i><b>TRUST</b>
+							</h3>
+							<p class="card-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et
+								laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris
+								eget. Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end about -->
+	<!-- start contact -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<a mat-icon-button class="close-button" [mat-dialog-close]="true">
+						<mat-icon class="close-icon" color="warn">close</mat-icon>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">We are <span>REACHABLE</span>
+					</h2>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+					<form action="#" method="post">
+						<label>NAME</label>
+						<input name="fullname" type="text" class="form-control" id="fullname">
+
+						<label>EMAIL</label>
+						<input name="email" type="email" class="form-control" id="email">
+
+						<label>MESSAGE</label>
+						<textarea name="message" rows="4" class="form-control" id="message"></textarea>
+						<input type="submit" class="form-control">
+					</form>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+					<address>
+						<p class="address-title">REACH US AT</p>
+						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et
+							laoreet phasellus ut nisi id leo molestie.</span>
+						<p><i class="fa fa-phone"></i> +91 12345 67890</p>
+						<p><i class="fa fa-envelope-o"></i> somgroup@gmail.com</p>
+						<p><i class="fa fa-map-marker"></i> 123, ABC Street, Indore - 452 009.</p>
+					</address>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contact -->
+	<!-- start footer  -->
+	<section id="footer">
+		<footer class="bg-light text-center text-white">
+			<!-- Grid container -->
+			<div class="container p-4 pb-0">
+				<!-- Section: Social media -->
+				<section class="mb-4">
+					<!-- Facebook -->
+					<a mdbRipple class="btn btn-primary btn-floating m-1"
+						style="background-color: #3b5998; color: white;" href="#!" role="button"><i
+							class="fa fa-facebook-f"></i></a>
+
+					<!-- Twitter -->
+					<a mdbRipple class="btn btn-primary btn-floating m-1"
+						style="background-color: #55acee; color: white;" href="#!" role="button"><i
+							class="fa fa-twitter"></i></a>
+
+					<!-- Google -->
+					<a mdbRipple class="btn btn-primary btn-floating m-1"
+						style="background-color: #dd4b39; color: white;" href="#!" role="button"><i
+							class="fa fa-google"></i></a>
+
+					<!-- Instagram -->
+					<a mdbRipple class="btn btn-primary btn-floating m-1"
+						style="background-color: #ac2bac; color: white;" href="#!" role="button"><i
+							class="fa fa-instagram"></i></a>
+
+					<!-- Linkedin -->
+					<a mdbRipple class="btn btn-primary btn-floating m-1"
+						style="background-color: #0082ca; color: white;" href="#!" role="button"><i
+							class="fa fa-linkedin"></i></a>
+				</section>
+				<!-- Section: Social media -->
+			</div>
+			<!-- Grid container -->
+
+			<!-- Copyright -->
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+				© 2022 Copyright:
+				<a class="text-white" href="https://somgroup.com/">somgroup.com</a>
+			</div>
+			<!-- Copyright -->
+		</footer>
+	</section>
+	<!-- end footer -->
+</div>
+
+<ng-template #enquiryFormDialog>
+	<!-- start contact -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<a mat-icon-button class="close-button" [mat-dialog-close]="true">
+						<mat-icon class="close-icon" color="warn">close</mat-icon>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">We are <span>REACHABLE</span>
+					</h2>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+					<form action="#" method="post">
+						<label>NAME</label>
+						<input name="fullname" type="text" class="form-control" id="fullname">
+
+						<label>EMAIL</label>
+						<input name="email" type="email" class="form-control" id="email">
+
+						<label>MESSAGE</label>
+						<textarea name="message" rows="4" class="form-control" id="message"></textarea>
+						<input type="submit" class="form-control">
+					</form>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+					<address>
+						<p class="address-title">REACH US AT</p>
+						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et
+							laoreet phasellus ut nisi id leo molestie.</span>
+						<p><i class="fa fa-phone"></i> +91 12345 67890</p>
+						<p><i class="fa fa-envelope-o"></i> somgroup@gmail.com</p>
+						<p><i class="fa fa-map-marker"></i> 123, ABC Street, Indore - 452 009.</p>
+					</address>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end contact -->
+</ng-template>
